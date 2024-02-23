@@ -14,7 +14,7 @@
     "license": "MIT",
     "require": {
         "flarum/core": "^1.8",
-        "gtdxyz/hcaptcha": "^1.0"
+        "gtdxyz/hcaptcha": "*"
     },
     "authors": [
         {
