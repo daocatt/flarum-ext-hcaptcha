@@ -29,7 +29,6 @@ class AddValidatorRule
         $validator->addExtension(
             'hcaptcha',
             function ($attribute, $value, $parameters) use ($secret) {
-                $ss= (new hCaptcha($secret))->verify($value);
                 return !empty($value) && (new hCaptcha($secret))->verify($value)->isSuccess();
             }
         );
